@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import "normalize";
+
+$grey: #ccc;
+$white: #fff;
+
+$container: 600px;
+$messageWidth: 370px;
+$bubbleRadius: 24px;
+$bubbleRadiusSmall: 4px;
+
+body {
+  background: $grey;
+  text-align: center;
+}
+
+.container {
+  max-width: $container;
+  background: $white;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  img {
+    margin-top: 30px;
+    display: inline-block;
+  }
+}
+
+#chat {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  .avatar {
+    align-self: flex-end;
+    width: 60px;
+    margin: 0 0 0 60px;
+
+    img {
+      border-radius: 50%;
+    }
+
+  }
+
+  .messages {
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      background: $grey;
+      max-width: $messageWidth;
+      margin: 5px 30px 0 20px;
+      padding: 15px;
+      text-align: left;
+      border-radius: 
+        $bubbleRadiusSmall 
+        $bubbleRadius 
+        $bubbleRadius 
+        $bubbleRadiusSmall;
+    }
+    #first {
+      border-radius: 
+        $bubbleRadius 
+        $bubbleRadius 
+        $bubbleRadius 
+        $bubbleRadiusSmall;
+    }
+    #last {
+      border-radius: 
+        $bubbleRadiusSmall
+        $bubbleRadius 
+        $bubbleRadius 
+        $bubbleRadius;
+        margin-bottom: 10px;
+    }
+  }
+
+}
+
+#mailChimp {
+  input {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px 10px 20px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    max-width: $messageWidth - 80px;
+
+    height: 30px;
+    padding: 10px 20px;
+    border: 1px solid $grey;
+    -webkit-border-radius: $bubbleRadiusSmall;
+    border-radius: $bubbleRadiusSmall;
+    background: $white;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  }
+  input[type="submit"] {
+    background: #ccc;
+
+  }
+}
+
+footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
