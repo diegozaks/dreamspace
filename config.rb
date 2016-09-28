@@ -42,8 +42,8 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
   # set :http_prefix, '/BETA'
- activate :directory_indexes
- # set :relative_links, true
+ # activate :directory_indexes
+ set :relative_links, true
 
  #   # Use relative URLs
  #  activate :relative_assets
