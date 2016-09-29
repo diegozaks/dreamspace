@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "normalize";
+@import "mixins";
 
 $grey: #F7F7F7;
 $darkGrey: #5C5C5C;
@@ -53,30 +54,35 @@ header {
   display: flex;
   // flex-wrap: wrap;
   justify-content: center;
-  margin: 40px;
-  .avatar {
-    align-self: flex-end;
-    width: 60px;
-    margin: 0 0 0 60px;
-
-    img {
-      border-radius: 50%;
+  margin: 40px 10px;
+  @include tabletPlus {
+      margin: 40px;
     }
-
-  }
 
   .messages {
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 10px;
+    
+    @include tabletPlus {
+      padding: 0 40px;
+    }
+
     p {
       max-width: $messageWidth;
       display: inline-block;
       padding: 15px;
       font-size: $font-size-M;
       font-weight: $font-weight-light;
+    }
+
+    img {
+      width: 35px;
+        @include tabletPlus {
+          width: 60px;
+        }
     }
 
     .dream-message {
@@ -86,7 +92,11 @@ header {
       p {
         background-color: $grey;
         text-align: left;
-        margin: 5px auto 0 75px;
+        margin: 5px auto 0 45px;
+          @include tabletPlus {
+              margin: 5px auto 0 75px;
+          }
+
         padding-right: 30px;
         padding-left: 25px;
         color: $darkGrey;
@@ -136,7 +146,11 @@ header {
       p {
         background-color: $blue;
         text-align: right;
-        margin: 5px 75px 0 auto;
+        margin: 5px 45px 0 auto;
+         @include tabletPlus {
+              margin: 5px 70px auto 5px;
+          }
+
         color: $white;
         padding-right: 20px;
         padding-left: 30px;
