@@ -6,6 +6,7 @@ $grey: #F7F7F7;
 $darkGrey: #5C5C5C;
 $white: #fff;
 $blue: #35B9E1;
+$red: #E1354A;
 
 $container: 800px;
 $messageWidth: 320px;
@@ -238,7 +239,30 @@ header {
     border-radius: $bubbleRadius;
 
   }
+
+  .indicates-required {
+    font-size: $font-size-S;
+    color: $blue;
+  }
+  // div.mce_inline_error {
+  //   background-color: none;
+  //   color: $red;
+  //   font-size: $font-size-S;
+  //   font-weight: $font-weight-light;
+  // }
 }
+
+.mce_inline_error {
+    background-color: none;
+    color: $red;
+    font-size: $font-size-S;
+    font-weight: $font-weight-light;
+  }
+
+  #mce-responses {
+    max-width: 400px;
+    margin: 20px auto;
+  }
 
 #logos {
   margin-bottom: 40px;
