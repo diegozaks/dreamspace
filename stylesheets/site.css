@@ -477,7 +477,7 @@ header {
         @media (min-width: 768px) {
           /* line 92, site.css.scss */
           #chat .messages .dream-message p {
-            margin: 5px auto 0 75px; } }
+            margin: 5px auto 0 70px; } }
       /* line 110, site.css.scss */
       #chat .messages .dream-message .open {
         border-radius: 24px 24px 24px 4px; }
@@ -576,3 +576,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around; }
+  /* line 251, site.css.scss */
+  footer a {
+    color: white; }
