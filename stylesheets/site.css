@@ -404,121 +404,136 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* line 29, site.css.scss */
+/* line 30, site.css.scss */
 body {
   background: #F7F7F7;
   text-align: center;
   font-family: "Signika", sans-serif;
   font-weight: 600; }
 
-/* line 36, site.css.scss */
+/* line 37, site.css.scss */
 .container {
   max-width: 800px;
   background: #fff;
   margin: 0 auto; }
 
-/* line 42, site.css.scss */
+/* line 43, site.css.scss */
 header {
   text-align: center;
   margin-bottom: 30px; }
-  /* line 45, site.css.scss */
+  /* line 46, site.css.scss */
   header img {
     margin-top: 30px;
     display: inline-block;
     padding-left: 35px; }
 
-/* line 52, site.css.scss */
+/* line 53, site.css.scss */
 #chat {
   display: flex;
   justify-content: center;
-  margin: 40px; }
-  /* line 57, site.css.scss */
-  #chat .avatar {
-    align-self: flex-end;
-    width: 60px;
-    margin: 0 0 0 60px; }
-    /* line 62, site.css.scss */
-    #chat .avatar img {
-      border-radius: 50%; }
-  /* line 68, site.css.scss */
+  margin: 40px 10px; }
+  @media (min-width: 768px) {
+    /* line 53, site.css.scss */
+    #chat {
+      margin: 40px; } }
+  /* line 62, site.css.scss */
   #chat .messages {
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
     width: 100%;
-    padding: 0 40px; }
-    /* line 74, site.css.scss */
+    padding: 0 10px; }
+    @media (min-width: 768px) {
+      /* line 62, site.css.scss */
+      #chat .messages {
+        padding: 0 40px; } }
+    /* line 73, site.css.scss */
     #chat .messages p {
       max-width: 320px;
       display: inline-block;
       padding: 15px;
       font-size: 16px;
       font-weight: 300; }
-    /* line 82, site.css.scss */
+    /* line 81, site.css.scss */
+    #chat .messages img {
+      width: 35px; }
+      @media (min-width: 768px) {
+        /* line 81, site.css.scss */
+        #chat .messages img {
+          width: 60px; } }
+    /* line 88, site.css.scss */
     #chat .messages .dream-message {
       text-align: left;
       margin-top: 20px; }
-      /* line 86, site.css.scss */
+      /* line 92, site.css.scss */
       #chat .messages .dream-message p {
         background-color: #F7F7F7;
         text-align: left;
-        margin: 5px auto 0 75px;
+        margin: 5px auto 0 45px;
         padding-right: 30px;
         padding-left: 25px;
         color: #5C5C5C;
         border-radius: 4px 24px 24px 4px; }
-      /* line 100, site.css.scss */
+        @media (min-width: 768px) {
+          /* line 92, site.css.scss */
+          #chat .messages .dream-message p {
+            margin: 5px auto 0 75px; } }
+      /* line 110, site.css.scss */
       #chat .messages .dream-message .open {
         border-radius: 24px 24px 24px 4px; }
-      /* line 107, site.css.scss */
+      /* line 117, site.css.scss */
       #chat .messages .dream-message .single {
         border-radius: 24px 24px 24px 24px; }
-      /* line 114, site.css.scss */
+      /* line 124, site.css.scss */
       #chat .messages .dream-message .close {
         border-radius: 4px 24px 24px 24px;
         margin-bottom: 10px; }
-      /* line 122, site.css.scss */
+      /* line 132, site.css.scss */
       #chat .messages .dream-message .last {
         display: flex;
         align-items: flex-start; }
-        /* line 125, site.css.scss */
+        /* line 135, site.css.scss */
         #chat .messages .dream-message .last p {
           margin: 5px auto 0 10px; }
-    /* line 132, site.css.scss */
+    /* line 142, site.css.scss */
     #chat .messages .user-message {
       text-align: right;
       margin-top: 20px; }
-      /* line 136, site.css.scss */
+      /* line 146, site.css.scss */
       #chat .messages .user-message p {
         background-color: #0084FF;
         text-align: right;
-        margin: 5px 75px 0 auto;
+        margin: 5px 45px 0 auto;
         color: #fff;
         padding-right: 20px;
         padding-left: 30px;
         border-radius: 24px 4px 4px 24px; }
-      /* line 150, site.css.scss */
+        @media (min-width: 768px) {
+          /* line 146, site.css.scss */
+          #chat .messages .user-message p {
+            margin: 5px 70px auto 5px; } }
+      /* line 164, site.css.scss */
       #chat .messages .user-message .open {
         border-radius: 24px 24px 4px 24px; }
-      /* line 157, site.css.scss */
+      /* line 171, site.css.scss */
       #chat .messages .user-message .single {
         border-radius: 24px 24px 24px 24px; }
-      /* line 164, site.css.scss */
+      /* line 178, site.css.scss */
       #chat .messages .user-message .close {
         border-radius: 24px 4px 24px 24px;
         margin-bottom: 10px; }
-      /* line 172, site.css.scss */
+      /* line 186, site.css.scss */
       #chat .messages .user-message .last {
         display: flex;
         align-items: flex-start; }
-        /* line 175, site.css.scss */
+        /* line 189, site.css.scss */
         #chat .messages .user-message .last p {
           margin: 5px 10px 0 auto; }
 
-/* line 186, site.css.scss */
+/* line 200, site.css.scss */
 #mailChimp {
   margin-bottom: 40px; }
-  /* line 190, site.css.scss */
+  /* line 204, site.css.scss */
   #mailChimp input {
     display: inline-block;
     text-align: center;
@@ -538,21 +553,21 @@ header {
     background: #fff;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset; }
-  /* line 212, site.css.scss */
+  /* line 226, site.css.scss */
   #mailChimp input[type="submit"] {
     background: #0084FF;
     color: #fff;
     font-weight: 300;
     margin-top: 20px; }
 
-/* line 221, site.css.scss */
+/* line 235, site.css.scss */
 #logos {
   margin-bottom: 40px; }
-  /* line 223, site.css.scss */
+  /* line 237, site.css.scss */
   #logos img {
     padding: 0 20px; }
 
-/* line 228, site.css.scss */
+/* line 242, site.css.scss */
 footer {
   background-color: #0084FF;
   color: #fff;
