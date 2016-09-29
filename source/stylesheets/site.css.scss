@@ -6,6 +6,7 @@ $grey: #F7F7F7;
 $darkGrey: #5C5C5C;
 $white: #fff;
 $blue: #35B9E1;
+$darkBlue: #0084FF;
 $red: #E1354A;
 
 $container: 800px;
@@ -228,6 +229,8 @@ header {
   }
   input[type="submit"] {
     background: $blue;
+    transition: background-color 0.5s ease;
+    // transition: box-shadow 0.5s ease;
     color: $white;
     font-weight: $font-weight-light;
     margin-top: 20px;
@@ -239,6 +242,20 @@ header {
     border-radius: $bubbleRadius;
 
   }
+  input[type="submit"]:hover {
+    
+    background: $darkBlue;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12);
+  }
+
+  input[type="submit"]:active {
+    
+    background: $darkBlue;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+  }
+
 
   .indicates-required {
     font-size: $font-size-S;
