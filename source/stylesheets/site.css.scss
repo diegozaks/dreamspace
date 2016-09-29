@@ -94,7 +94,7 @@ header {
         text-align: left;
         margin: 5px auto 0 45px;
           @include tabletPlus {
-              margin: 5px auto 0 75px;
+              margin: 5px auto 0 70px;
           }
 
         padding-right: 30px;
@@ -247,4 +247,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  a {
+    color: white;
+  }
 }
