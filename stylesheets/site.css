@@ -404,7 +404,7 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* line 31, site.css.scss */
+/* line 32, site.css.scss */
 body {
   background: #F7F7F7;
   text-align: center;
@@ -413,32 +413,32 @@ body {
   color: #5C5C5C;
   font-weight: 300; }
 
-/* line 40, site.css.scss */
+/* line 41, site.css.scss */
 .container {
   max-width: 800px;
   background: #fff;
   margin: 0 auto; }
 
-/* line 46, site.css.scss */
+/* line 47, site.css.scss */
 header {
   text-align: center;
   margin-bottom: 30px; }
-  /* line 49, site.css.scss */
+  /* line 50, site.css.scss */
   header img {
     margin-top: 30px;
     display: inline-block;
     padding-left: 35px; }
 
-/* line 56, site.css.scss */
+/* line 57, site.css.scss */
 #chat {
   display: flex;
   justify-content: center;
   margin: 40px 10px; }
   @media (min-width: 768px) {
-    /* line 56, site.css.scss */
+    /* line 57, site.css.scss */
     #chat {
       margin: 40px; } }
-  /* line 65, site.css.scss */
+  /* line 66, site.css.scss */
   #chat .messages {
     display: flex;
     flex-direction: column;
@@ -446,28 +446,28 @@ header {
     width: 100%;
     padding: 0 10px; }
     @media (min-width: 768px) {
-      /* line 65, site.css.scss */
+      /* line 66, site.css.scss */
       #chat .messages {
         padding: 0 40px; } }
-    /* line 76, site.css.scss */
+    /* line 77, site.css.scss */
     #chat .messages p {
       max-width: 320px;
       display: inline-block;
       padding: 15px;
       font-size: 16px;
       font-weight: 300; }
-    /* line 84, site.css.scss */
+    /* line 85, site.css.scss */
     #chat .messages img {
       width: 35px; }
       @media (min-width: 768px) {
-        /* line 84, site.css.scss */
+        /* line 85, site.css.scss */
         #chat .messages img {
           width: 60px; } }
-    /* line 91, site.css.scss */
+    /* line 92, site.css.scss */
     #chat .messages .dream-message {
       text-align: left;
       margin-top: 20px; }
-      /* line 95, site.css.scss */
+      /* line 96, site.css.scss */
       #chat .messages .dream-message p {
         background-color: #F7F7F7;
         text-align: left;
@@ -477,31 +477,31 @@ header {
         color: #5C5C5C;
         border-radius: 4px 24px 24px 4px; }
         @media (min-width: 768px) {
-          /* line 95, site.css.scss */
+          /* line 96, site.css.scss */
           #chat .messages .dream-message p {
             margin: 5px auto 0 70px; } }
-      /* line 113, site.css.scss */
+      /* line 114, site.css.scss */
       #chat .messages .dream-message .open {
         border-radius: 24px 24px 24px 4px; }
-      /* line 120, site.css.scss */
+      /* line 121, site.css.scss */
       #chat .messages .dream-message .single {
         border-radius: 24px 24px 24px 24px; }
-      /* line 127, site.css.scss */
+      /* line 128, site.css.scss */
       #chat .messages .dream-message .close {
         border-radius: 4px 24px 24px 24px;
         margin-bottom: 10px; }
-      /* line 135, site.css.scss */
+      /* line 136, site.css.scss */
       #chat .messages .dream-message .last {
         display: flex;
         align-items: flex-start; }
-        /* line 138, site.css.scss */
+        /* line 139, site.css.scss */
         #chat .messages .dream-message .last p {
           margin: 5px auto 0 10px; }
-    /* line 145, site.css.scss */
+    /* line 146, site.css.scss */
     #chat .messages .user-message {
       text-align: right;
       margin-top: 20px; }
-      /* line 149, site.css.scss */
+      /* line 150, site.css.scss */
       #chat .messages .user-message p {
         background-color: #35B9E1;
         text-align: right;
@@ -511,31 +511,31 @@ header {
         padding-left: 30px;
         border-radius: 24px 4px 4px 24px; }
         @media (min-width: 768px) {
-          /* line 149, site.css.scss */
+          /* line 150, site.css.scss */
           #chat .messages .user-message p {
             margin: 5px 70px auto 5px; } }
-      /* line 167, site.css.scss */
+      /* line 168, site.css.scss */
       #chat .messages .user-message .open {
         border-radius: 24px 24px 4px 24px; }
-      /* line 174, site.css.scss */
+      /* line 175, site.css.scss */
       #chat .messages .user-message .single {
         border-radius: 24px 24px 24px 24px; }
-      /* line 181, site.css.scss */
+      /* line 182, site.css.scss */
       #chat .messages .user-message .close {
         border-radius: 24px 4px 24px 24px;
         margin-bottom: 10px; }
-      /* line 189, site.css.scss */
+      /* line 190, site.css.scss */
       #chat .messages .user-message .last {
         display: flex;
         align-items: flex-start; }
-        /* line 192, site.css.scss */
+        /* line 193, site.css.scss */
         #chat .messages .user-message .last p {
           margin: 5px 10px 0 auto; }
 
-/* line 203, site.css.scss */
+/* line 204, site.css.scss */
 #mailChimp {
   margin-bottom: 40px; }
-  /* line 207, site.css.scss */
+  /* line 208, site.css.scss */
   #mailChimp input {
     display: inline-block;
     text-align: center;
@@ -555,9 +555,10 @@ header {
     background: #fff;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset; }
-  /* line 229, site.css.scss */
+  /* line 230, site.css.scss */
   #mailChimp input[type="submit"] {
     background: #35B9E1;
+    transition: background-color 0.5s ease;
     color: #fff;
     font-weight: 300;
     margin-top: 20px;
@@ -565,31 +566,41 @@ header {
     box-shadow: none;
     -webkit-border-radius: 24px;
     border-radius: 24px; }
-  /* line 243, site.css.scss */
+  /* line 245, site.css.scss */
+  #mailChimp input[type="submit"]:hover {
+    background: #0084FF;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12); }
+  /* line 252, site.css.scss */
+  #mailChimp input[type="submit"]:active {
+    background: #0084FF;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset; }
+  /* line 260, site.css.scss */
   #mailChimp .indicates-required {
     font-size: 14px;
     color: #35B9E1; }
 
-/* line 255, site.css.scss */
+/* line 272, site.css.scss */
 .mce_inline_error {
   background-color: none;
   color: #E1354A;
   font-size: 14px;
   font-weight: 300; }
 
-/* line 262, site.css.scss */
+/* line 279, site.css.scss */
 #mce-responses {
   max-width: 400px;
   margin: 20px auto; }
 
-/* line 267, site.css.scss */
+/* line 284, site.css.scss */
 #logos {
   margin-bottom: 40px; }
-  /* line 269, site.css.scss */
+  /* line 286, site.css.scss */
   #logos img {
     padding: 0 20px; }
 
-/* line 274, site.css.scss */
+/* line 291, site.css.scss */
 footer {
   background-color: #35B9E1;
   color: #fff;
@@ -598,6 +609,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  /* line 283, site.css.scss */
+  /* line 300, site.css.scss */
   footer a {
     color: white; }
