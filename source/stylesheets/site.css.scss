@@ -2,17 +2,35 @@
 @import "normalize";
 
 $grey: #F7F7F7;
+$darkGrey: #5C5C5C;
 $white: #fff;
 $blue: #0084FF;
 
-$container: 600px;
-$messageWidth: 370px;
+$container: 800px;
+$messageWidth: 320px;
 $bubbleRadius: 24px;
 $bubbleRadiusSmall: 4px;
+
+// Typography Variables
+$font-size-L: 36px;
+$font-size-M: 16px;
+$font-size-S: 14px;
+
+// General Typography
+
+$font-weight-light: 300;
+$font-weight-bold: 600;
+
+$font-family: 'Signika', sans-serif;;
+
+
+// General CSS
 
 body {
   background: $grey;
   text-align: center;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
 }
 
 .container {
@@ -27,6 +45,7 @@ header {
   img {
     margin-top: 30px;
     display: inline-block;
+    padding-left:35px;
   }
 }
 
@@ -34,7 +53,7 @@ header {
   display: flex;
   // flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
+  margin: 40px;
   .avatar {
     align-self: flex-end;
     width: 60px;
@@ -55,15 +74,28 @@ header {
     p {
       max-width: $messageWidth;
       display: inline-block;
+      padding: 15px;
+      font-size: $font-size-M;
+      font-weight: $font-weight-light;
     }
 
     .dream-message {
       text-align: left;
+      margin-top: 20px;
+
       p {
         background-color: $grey;
-        padding: 15px;
         text-align: left;
         margin: 5px auto 0 75px;
+        padding-right: 30px;
+        padding-left: 25px;
+        color: $darkGrey;
+
+        border-radius: 
+          $bubbleRadiusSmall 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadiusSmall;
       }
       .open {
         border-radius: 
@@ -99,11 +131,21 @@ header {
 
     .user-message {
       text-align: right;
+      margin-top: 20px;
+      
       p {
         background-color: $blue;
-        padding: 15px;
         text-align: right;
         margin: 5px 75px 0 auto;
+        color: $white;
+        padding-right: 20px;
+        padding-left: 30px;
+
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadiusSmall 
+          $bubbleRadiusSmall
+          $bubbleRadius;
       }
       .open {
         border-radius: 
@@ -142,6 +184,9 @@ header {
 }
 
 #mailChimp {
+
+  margin-bottom: 40px;
+
   input {
     display: inline-block;
     text-align: center;
@@ -150,7 +195,10 @@ header {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     width: 100%;
-    max-width: $messageWidth - 80px;
+    max-width: $messageWidth;
+
+    color: $darkGrey;
+    font-weight: $font-weight-light;
 
     height: 30px;
     padding: 10px 20px;
@@ -160,15 +208,27 @@ header {
     background: $white;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
-    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
   }
   input[type="submit"] {
-    background: #ccc;
+    background: $blue;
+    color: $white;
+    font-weight: $font-weight-light;
+    margin-top: 20px;
 
   }
 }
 
+#logos {
+  margin-bottom: 40px;
+  img {
+    padding: 0 20px;
+  }
+}
+
 footer {
+  background-color: $blue;
+  color: $white;
+  font-weight: $font-weight-light;
   height: 40px;
   display: flex;
   align-items: center;
