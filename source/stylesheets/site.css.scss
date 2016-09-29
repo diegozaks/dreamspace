@@ -1,8 +1,9 @@
 @charset "utf-8";
 @import "normalize";
 
-$grey: #ccc;
+$grey: #F7F7F7;
 $white: #fff;
+$blue: #0084FF;
 
 $container: 600px;
 $messageWidth: 370px;
@@ -47,34 +48,95 @@ header {
 
   .messages {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    width: 100%;
+    padding: 0 40px;
     p {
-      background: $grey;
       max-width: $messageWidth;
-      margin: 5px 30px 0 20px;
-      padding: 15px;
+      display: inline-block;
+    }
+
+    .dream-message {
       text-align: left;
-      border-radius: 
-        $bubbleRadiusSmall 
-        $bubbleRadius 
-        $bubbleRadius 
-        $bubbleRadiusSmall;
+      p {
+        background-color: $grey;
+        padding: 15px;
+        text-align: left;
+        margin: 5px auto 0 75px;
+      }
+      .open {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius
+          $bubbleRadius 
+          $bubbleRadiusSmall;
+      }
+      .single {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius;
+      }
+      .close {
+        border-radius: 
+          $bubbleRadiusSmall
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius;
+          margin-bottom: 10px;
+      }
+      .last {
+        display: flex;
+        align-items: flex-start;
+        p {
+          margin: 5px auto 0 10px;
+        }
+      }
+
     }
-    #first {
-      border-radius: 
-        $bubbleRadius 
-        $bubbleRadius 
-        $bubbleRadius 
-        $bubbleRadiusSmall;
+
+    .user-message {
+      text-align: right;
+      p {
+        background-color: $blue;
+        padding: 15px;
+        text-align: right;
+        margin: 5px 75px 0 auto;
+      }
+      .open {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius
+          $bubbleRadiusSmall 
+          $bubbleRadius;
+      }
+      .single {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius;
+      }
+      .close {
+        border-radius: 
+          $bubbleRadius
+          $bubbleRadiusSmall
+          $bubbleRadius 
+          $bubbleRadius;
+          margin-bottom: 10px;
+      }
+      .last {
+        display: flex;
+        align-items: flex-start;
+        p {
+          margin: 5px 10px 0 auto;
+        }
+      }
+
     }
-    #last {
-      border-radius: 
-        $bubbleRadiusSmall
-        $bubbleRadius 
-        $bubbleRadius 
-        $bubbleRadius;
-        margin-bottom: 10px;
-    }
+
   }
 
 }
